@@ -64,7 +64,7 @@ const Home = () => {
     try {
       const apiUrl = import.meta.env.VITE_API_URL;
 
-      const res = await fetch(`${apiUrl}`, {
+      const res = await fetch(`${apiUrl}/api`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
