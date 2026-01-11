@@ -64,7 +64,7 @@ const Home = () => {
     try {
       const apiUrl = import.meta.env.VITE_BACKEND_URL;
 
-      const res = await fetch(`${apiUrl}/api/generate`, {
+      const res = await fetch(`${apiUrl}/generate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
